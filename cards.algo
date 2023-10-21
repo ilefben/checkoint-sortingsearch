@@ -1,0 +1,18 @@
+ALGORITHM cards
+VAR
+    arr : ARRAY_OF INTEGER[7];
+    n,i,j,aux:INTEGER;
+BEGIN
+    read(n);
+    FOR i FROM 0 TO n.length-1 STEP 1 DO
+        write("give a number : ");
+        read(arr[i]);
+        aux=arr[i];
+        j=i;
+        WHILE( (j>0)AND(arr[j-1]>aux) )DO
+            arr[j]=t[j-1];
+            j=j-1;
+            arr[j]=x;
+        END_WHILE
+    END_FOR
+END
